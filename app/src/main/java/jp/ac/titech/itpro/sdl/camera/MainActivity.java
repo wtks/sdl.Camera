@@ -52,12 +52,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int reqCode, int resCode, Intent data) {
         super.onActivityResult(reqCode, resCode, data);
-        switch (reqCode) {
-            case REQ_PHOTO:
-                if (resCode == RESULT_OK) {
-                    // TODO: You should implement the code that retrieve a bitmap image
-                }
-                break;
+        if (reqCode == REQ_PHOTO) {
+            if (resCode == RESULT_OK) {
+                // TODO: You should implement the code that retrieve a bitmap image
+            }
         }
     }
 
